@@ -15,6 +15,7 @@ export type Project = {
   url?: string;
   article?: string;
   telegram?: string;
+  devpost?: string;
   cover: string;
   image?: string;
   gallery?: { type: 'image' | 'video'; src: string; label: string; speed?: number; startTime?: number }[];
@@ -112,6 +113,28 @@ export const projects: Project[] = [
   {
     slug: 'lockify',
     title: 'lockify.',
+    subtitle: 'productivity app',
+    description: 'a smart todo and calendar app for iOS — voice-powered task creation, priority scheduling, and a unified calendar view to keep your day on track.',
+    tech: ['React Native', 'TypeScript', 'iOS'],
+    year: '2025',
+    industry: 'productivity / mobile',
+    event: 'BeaverHacks, Oregon State University',
+    sprint: 'mobile development',
+    award: '',
+    category: 'cs',
+    badge: 'BeaverHacks',
+    github: 'https://github.com/AzizAkturin/Lockify',
+    devpost: 'https://devpost.com/software/lockiy',
+    cover: '#1a0e00',
+    image: '/projects/lockify-cover.png',
+    gallery: [
+      { type: 'image' as const, src: '/projects/lockify-app-ss1.png', label: 'todo list' },
+      { type: 'image' as const, src: '/projects/lockify-app-ss2.png', label: 'calendar' },
+    ],
+  },
+  {
+    slug: 'locky',
+    title: 'locky.',
     subtitle: 'focus app',
     description: 'a robot that physically takes your phone and hides it somewhere in the room — keeps you from getting distracted by making it inconvenient to retrieve.',
     tech: ['Raspberry Pi', 'Python', 'React Native', 'TypeScript', 'Motor Control'],
@@ -122,7 +145,7 @@ export const projects: Project[] = [
     award: '',
     category: 'cs',
     badge: 'MakeMIT x Harvard',
-    github: 'https://github.com/AzizAkturin/Lockify',
+    devpost: 'https://devpost.com/software/locky-ktn7yu',
     cover: '#0d1a0d',
     image: '/projects/lockify.png',
     gallery: [

@@ -128,6 +128,17 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
                 view telegram
               </a>
             )}
+            {project.devpost && (
+              <a
+                href={project.devpost}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="reveal-bottom inline-block border border-white/30 text-white/80 text-sm px-6 py-2.5 hover:bg-white hover:text-black transition-colors"
+                style={{ animationDelay: '560ms' }}
+              >
+                view on devpost
+              </a>
+            )}
           </div>
         </div>
       </div>
