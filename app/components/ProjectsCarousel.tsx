@@ -129,21 +129,21 @@ function ProjectCard({ project, featured }: { project: typeof projects[0]; featu
         <Image src={project.image} alt={project.title} fill className="object-cover object-top" />
       )}
       {project.badge && (
-        <div className="absolute top-3 right-3 flex items-center gap-1 bg-black/60 backdrop-blur-sm px-2 py-1 rounded-full">
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="#f59e0b">
+        <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-black/60 backdrop-blur-sm px-3 py-1.5 rounded-full">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="#f59e0b">
             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
           </svg>
-          <span className="text-[9px] font-semibold uppercase tracking-wider" style={{ color: '#f59e0b' }}>
+          <span className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: '#f59e0b' }}>
             {project.badge}
           </span>
         </div>
       )}
-      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/70 to-transparent" />
-      <div className="absolute inset-0 flex flex-col justify-end p-4">
+      <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent" />
+      <div className="absolute inset-0 flex flex-col justify-end p-5">
         {featured && (
-          <p className="text-white/50 text-[10px] uppercase tracking-widest mb-1">{project.subtitle}</p>
+          <p className="text-white/50 text-xs uppercase tracking-widest mb-1.5">{project.subtitle}</p>
         )}
-        <p className="text-white font-bold text-lg leading-tight">{project.title}</p>
+        <p className="text-white font-bold text-xl leading-tight">{project.title}</p>
       </div>
     </div>
   );

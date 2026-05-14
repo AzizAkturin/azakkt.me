@@ -1,5 +1,7 @@
 import Link from "next/link";
 import ProjectsCarousel from "./components/ProjectsCarousel";
+import LandingHero from "./components/LandingHero";
+import PixelStars from "./components/PixelStars";
 import { projects } from "./data/projects";
 
 export default function Home() {
@@ -8,39 +10,22 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero */}
-      <section
-        className="relative min-h-screen bg-cover bg-center bg-no-repeat flex flex-col px-8"
-        style={{ backgroundImage: "url('/bg.png')" }}
-      >
-        <div className="absolute inset-0 bg-black/40" />
-
-        <div className="relative flex-1 flex flex-col justify-center pt-20">
-          <h1 className="text-[9vw] font-black leading-[0.9] tracking-tight text-white lowercase">
-            <span className="block overflow-hidden">
-              <span className="reveal-bottom block" style={{ animationDelay: "100ms" }}>aziz</span>
-            </span>
-            <span className="block overflow-hidden">
-              <span className="reveal-bottom block" style={{ animationDelay: "200ms" }}>akturin.</span>
-            </span>
-          </h1>
-
-          <div className="overflow-hidden mt-4">
-            <p className="reveal-bottom text-base text-white/80" style={{ animationDelay: "320ms" }}>
-              i build to make an impact.
-            </p>
-          </div>
-        </div>
-      </section>
+      <LandingHero />
 
       {/* CS Projects */}
-      <div style={{ backgroundColor: "#1e2d1e" }}>
-        <ProjectsCarousel projects={csProjects} title="work." />
+      <div style={{ backgroundColor: "#1e2d1e" }} className="relative">
+        <PixelStars />
+        <div className="relative z-[1]">
+          <ProjectsCarousel projects={csProjects} title="work." />
+        </div>
       </div>
 
       {/* Other Projects */}
-      <div style={{ backgroundColor: "#1e2d1e" }} className="border-t border-white/10">
-        <ProjectsCarousel projects={otherProjects} title="other." />
+      <div style={{ backgroundColor: "#1e2d1e" }} className="relative border-t border-white/10">
+        <PixelStars />
+        <div className="relative z-[1]">
+          <ProjectsCarousel projects={otherProjects} title="other." />
+        </div>
       </div>
 
       {/* About */}
@@ -112,9 +97,10 @@ export default function Home() {
       {/* CTA */}
       <section
         style={{ backgroundColor: '#1e2d1e' }}
-        className="min-h-screen px-8 py-24 flex flex-col border-t border-white/10"
+        className="relative min-h-screen px-8 py-24 flex flex-col border-t border-white/10"
       >
-        <div className="max-w-4xl mx-auto w-full flex flex-col flex-1">
+        <PixelStars />
+        <div className="relative z-[1] max-w-4xl mx-auto w-full flex flex-col flex-1">
 
           <div className="flex-1 flex flex-col justify-center">
             <div className="overflow-hidden mb-10">

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { projects } from '../../data/projects';
 import GalleryVideo from '../../components/GalleryVideo';
+import PixelStars from '../../components/PixelStars';
 
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
@@ -14,8 +15,9 @@ export default async function WorkPage({ params }: { params: Promise<{ slug: str
   if (!project) notFound();
 
   return (
-    <main style={{ backgroundColor: '#1e2d1e' }} className="min-h-screen px-8 pt-32 pb-24 text-white">
-      <div className="max-w-4xl mx-auto">
+    <main style={{ backgroundColor: '#1e2d1e' }} className="relative min-h-screen px-8 pt-32 pb-24 text-white">
+      <PixelStars />
+      <div className="relative z-[1] max-w-4xl mx-auto">
       {/* Back */}
       <div className="overflow-hidden mb-20">
         <Link

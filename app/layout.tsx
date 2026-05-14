@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import SmoothScroll from "./components/SmoothScroll";
+import LoadingScreen from "./components/LoadingScreen";
 import CustomCursor from "./components/CustomCursor";
 
 const geistSans = Geist({
@@ -18,6 +19,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Aziz Akturin",
   description: "Portfolio",
+  icons: {
+    icon: "/cursor-pokeball.png",
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +35,7 @@ export default function RootLayout({
         <style>{`*, *::before, *::after { cursor: none !important; }`}</style>
       </head>
       <body>
+        <LoadingScreen />
         <CustomCursor />
         <SmoothScroll>
           <Navbar />
