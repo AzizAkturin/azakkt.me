@@ -119,7 +119,7 @@ export default function ProjectsCarousel({ projects = allProjects, title = 'work
   );
 }
 
-function ProjectCard({ project, featured }: { project: typeof projects[0]; featured?: boolean }) {
+function ProjectCard({ project, featured }: { project: Project; featured?: boolean }) {
   return (
     <div
       className="w-full h-full relative overflow-hidden rounded-xl"
