@@ -14,9 +14,9 @@ const stack = [
 const experience = [
   {
     role: 'student compliance analyst',
-    org: 'information services office · university of oregon',
+    org: 'security office · university of oregon',
     period: 'feb 2026 – present',
-    detail: 'analyzing digital resources, software tools, and subscriptions across the university to identify security vulnerabilities, compliance risks, and inefficiencies. building algorithmic approaches in smartsheet to audit platforms and support uo\'s transition to a centralized microsoft ecosystem.',
+    detail: 'analyzed 3000+ university digital resources, software subscriptions, and service records in smartsheet to identify security, compliance, and ownership risks across uo\'s technology ecosystem. built algorithmic risk-flagging workflows to detect tools with missing ownership, incomplete vendor documentation, duplicate functionality, or potential security gaps, supporting university\'s transition toward centralized microsoft services.',
   },
   {
     role: 'research assistant',
@@ -31,10 +31,10 @@ const experience = [
     detail: 'building an ai-powered project intelligence platform that ingests data from github, task boards, calendars, and team communications to surface execution bottlenecks, delayed milestones, and unclear ownership. combines workflow analytics with ai-generated recommendations to give early-stage teams a clear picture of what is slowing them down — and exactly what to fix.',
   },
   {
-    role: 'senior software engineer',
+    role: 'junior software engineer',
     org: 'QuackHacks · university of oregon',
-    period: 'oct 2025 – present',
-    detail: 'building and maintaining the technical infrastructure for one of the fastest-growing mlh hackathons on the west coast — 500+ applicants from 37 universities, $10k+ in prizes, sponsors include google, openai, pipeworks, base44, and emberex. full-stack work across the event website, application systems, registration tools, and internal platforms using next.js, react, and tailwind css.',
+    period: 'nov 2025 – present',
+    detail: 'co-built a hackathon website for registration using next.js, typescript, python, fastapi, and aws serving 600+ applicants, sponsored by google, mongodb, and openai, within a team of 10 engineers. hardened the api with ip-based rate limiting, preventing 2 major security breaches; engineered a team-matching platform with automatic discord channel provisioning across 10+ rest endpoints helping 100+ participants find teammates.',
   },
   {
     role: 'hackathons',
@@ -45,13 +45,13 @@ const experience = [
   {
     role: 'founder & mentor',
     org: 'college mentor quest',
-    period: 'apr 2024 – aug 2025',
-    detail: 'founded a profitable college admissions business with 680+ subscribers and $2000+ revenue. conducted 1.5-hour sessions covering essay writing, college list strategy, and portfolio development. coordinated 81 students across 12 countries — 12 achieved 700+ in sat math, 2 reached a perfect 800, average boost of +230 points. acceptances to lumiere education research program and stanford pre-college.',
+    period: 'mar 2024 – present',
+    detail: 'founded and scaled a college counseling business to 600+ students across 11 countries, providing standardized test prep, ap exam coaching, and college application guidance; generated $7,000+ in revenue. developed a telegram channel with integrated bot to streamline session registration. helped 12 students get 1500+ sat scores, guided students into elite universities such as nyu, upenn, stanford, cornell, yale, rice, and ut austin, and summer programs like stanford pre-college and lumiere research.',
   },
   {
     role: 'founder',
     org: 'aquasync · international baccalaureate · crimson education',
-    period: 'mar 2023 – aug 2024',
+    period: 'sep 2022 – jun 2025',
     detail: 'built an arduino-based irrigation system with a swift ios app to automate watering and monitor soil/air data via esp8266 sensors — improved irrigation efficiency by 56%. modeled the system as a weighted graph, using bfs and dijkstra\'s algorithm to optimize data transfer and detect low-humidity regions. awarded a $2,100 grant at the festival of hope (out of 500+ teams, created by international baccalaureate). won crimson 18 under 18 by pitching aquasync.',
   },
 ];
@@ -109,7 +109,7 @@ export default function AboutPage() {
         </div>
         <div className="overflow-hidden max-w-2xl">
           <p className="reveal-bottom text-white/70 text-base leading-relaxed" style={{ animationDelay: '80ms' }}>
-            uoregon math + cs + chem &apos;28. won 3 hackathons. crimson 18 under 18. founded a college counseling business with 680+ customers across 11 countries. heading toward a phd in computational biology.
+            uoregon math + cs &apos;28. won 3 hackathons. crimson 18 under 18. founded a college counseling business with 600+ customers across 11 countries. heading toward a phd in computational biology.
           </p>
         </div>
       </section>

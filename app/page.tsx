@@ -51,10 +51,10 @@ export default function Home() {
                 className="reveal-bottom font-black leading-[1.1] tracking-tight text-white lowercase"
                 style={{ fontSize: 'clamp(1.25rem, 2.5vw, 2rem)', animationDelay: '80ms' }}
               >
-                uoregon math + cs + chem &apos;28.<br />
+                uoregon math + cs &apos;28.<br />
                 won 3 hackathons. crimson 18 under 18.<br />
                 founded a college counseling business<br />
-                with 680+ customers across 11 countries.<br />
+                with 600+ customers across 11 countries.<br />
                 heading toward a phd in computational biology.
               </p>
             </div>
